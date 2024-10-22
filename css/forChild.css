@@ -1,0 +1,121 @@
+.forChild-parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 200px;
+}
+.forChild-title{
+    position: relative;
+    color: #7F5539;
+    margin-bottom: 40px;
+    margin-left: 75px;
+    font-size: 40px;
+}
+.forChild-title::after{
+    content: "";
+    position: absolute;
+    
+    width: 23%;
+    height: 3px;
+    
+    top: 130%;
+    left: 0;
+    
+    background-color: #7F5539;
+}
+.card{
+    position: relative;
+    background-color: #EDE0D4;
+    width: 300px;
+    height: 350px;
+    margin-left: 50px;
+    border: 1px solid #9C6644;
+    transition: .5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+    height: 75%;
+}
+.card1{
+    background-color: #EDE0D4;
+    width: 630px;
+    height: 350px;
+    grid-column: 1/3;
+    border: 1px solid #9C6644;
+    position: relative;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+}
+.card1::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    bottom: 0;
+
+    background-color: #e6ccb291;
+}
+
+.card1 h2
+{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #9C6644;
+    z-index: 2;
+}
+.card1 button{
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -30%);
+    background-color: #9C6644;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 2;
+}
+.card1 button:hover{
+    cursor: pointer;
+    background-color: #E6CCB2;
+    color: #7F5539;
+    transition: .5s;
+}
+
+.card-title{
+    color: #7F5539;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    font-size: 28px;
+}
+.star{
+    color: #B08968;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+.add-to-cart{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    color: #B08968;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 10px;
+}
+

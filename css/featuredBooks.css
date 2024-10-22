@@ -1,0 +1,142 @@
+.featuredBooks-parent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px;
+    position: relative;
+}
+
+.featuredBooks-title{
+    color: #7F5539;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-size: 40px;
+}
+.featuredBooks-title:hover{
+    cursor: pointer;
+}
+.featuredBooks-title::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 5%;
+    top: 120%;
+    left: 40%;
+    transform: translate(-40%, 0%);
+    background-color: #7F5539;
+;
+}
+.featuredBooks-title:hover::after{
+    width: 90%;
+    transition: .5s;
+}
+
+.featuredBooks-card{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    transition: .5s;
+}
+.featuredBooks-card:hover{
+    transform: rotateY(180deg);
+}
+.featuredBooks-card-front,
+.featuredBooks-card-back{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+.featuredBooks-card-front{
+    background-color: silver;
+    backface-visibility: hidden;
+    border: 1px solid black;
+    z-index: 10;
+}
+.featuredBooks-card-back{
+    border: 1px solid #9C6644;
+    background-color: #EDE0D4;
+    transform: rotateY(180deg);
+}
+
+.featuredBooks-card-front img{
+    width: 100%;
+    height: 100%;
+}
+
+.featuredBooks-card-front::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 20%;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: #e6ccb2d4;
+    border-top: 1px solid #7F5539;
+}
+
+.featuredBooks-card-front .price{
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    font-size: 35px;
+    font-weight: bold;
+    color: #7F5539;
+    z-index: 12;
+}
+.featuredBooks-card-front .star{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    color: #7F5539;
+    z-index: 12;
+}
+
+.featuredBooks-card-back h2{
+    color: #9C6644;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;  
+}
+
+.featuredBooks-card-back span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #7F5539;
+    font-size: 20px;
+}
+
+.featuredBooks-card-back p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #7F5539;
+}
+
+.featuredBooks-card-back button{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    transform: translate(-50%, -4%);
+    padding: 15px;
+    color: white;
+    background-color: #9C6644;
+    border: none;
+    border-radius: 20px;
+}
+.featuredBooks-card-back button:hover{
+    cursor: pointer;
+    background-color: #B08968;
+    transition: .5s;
+}
